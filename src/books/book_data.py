@@ -1,10 +1,5 @@
-from fastapi import FastAPI
 
-app = FastAPI()
-
-
-
-Book = [
+Book_data = [
     {
         "id":1,
         "title":"Think python",
@@ -41,25 +36,3 @@ Book = [
     
     
 ]
-
-@app.get("/books", )
-async def get_allbook():
-    return Book
-
-@app.get("/books/{id}" )
-async def get_book(id:int):
-    for book in Book:
-        if book["id"] == [id]:
-            return book
-        else:    
-            return {"book id does noexist"}
-
-@app.post("/books", )
-async def book():
-    return Book[0]
-@app.put("/book", )
-async def book():
-    return Book[1]
-@app.delete("/book", )
-async def book():
-    return Book
