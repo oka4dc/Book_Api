@@ -8,17 +8,17 @@ from src.books.schema import bookupdatemodel, Book
 book_router = APIRouter()
 
 @book_router.get("/books", response_model=list[Book])
-async def get_allbook():
+async def get_allbook()->dict:
     return Book_data
 
 @book_router.get("/book/{book_id}" )
-async def get_a_book(book_id:int):
+async def get_a_book(book_id:int)->dict:
     for book_var in Book_data:
         if book_var["id"] == book_id:
             return book_var
     return {"book id does noexist"}
 
-@book_router.post("/book", status_code=status.HTTP_201_CREATED)
+@book_router.post("/books", status_code=status.HTTP_201_CREATED)
 async def create_book(book_data: Book)->dict:
     new_book =book_data.model_dump()
     book_data.append(new_book)
