@@ -6,7 +6,8 @@ Book_data = [
         "author":"dan wood",
         "publisher":"O Relly",
         "page_count":750,
-        "language":"English"
+        "language":"English",
+        "is_borrowed": False
     }, 
     {
         "id":2,
@@ -14,7 +15,8 @@ Book_data = [
         "author":"walter watr",
         "publisher":"bush pub",
         "page_count":2750,
-        "language":"English"
+        "language":"English",
+        "is_borrowed": False
     },
     {
         "id":3,
@@ -22,7 +24,8 @@ Book_data = [
         "author":"hez fourier",
         "publisher":"landmark",
         "page_count":5450,
-        "language":"igbo"
+        "language":"igbo",
+        "is_borrowed": False
     },
     {
         "id":4,
@@ -30,7 +33,8 @@ Book_data = [
         "author":"dan wood",
         "publisher":"O Relly",
         "page_count":50,
-        "language":"spanish"
+        "language":"spanish",
+        "is_borrowed": False
     }
     
     

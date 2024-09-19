@@ -1,4 +1,4 @@
-
+"""
 
 from sqlmodel import SQLModel,Field, Column
 import sqlalchemy.dialects.postgresql as pg
@@ -26,4 +26,4 @@ class Book (SQLModel, table=True):
         return f"<Book {self.title}>"
     
     
-    
+"""
